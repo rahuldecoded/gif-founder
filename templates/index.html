@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Name</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+
+<body>
+	<div class="container-fluid text-center" style="background-color: #ab1235;">
+		<h3 style="color: #dddddd">Paste your API key below to generate Chatfuel link</h3>
+	</div>
+	<div class="container-fluid text-center" style="margin: 5px 5px 5px 5px">
+		<form class="form-horizontal" method="POST">
+			<div class="row">
+				<div class="col-sm-2 col-xs-0 col-md-3"></div>
+				<div class="col-sm-8 col-xs-12 col-md-6">
+					<input style="width: 100%; margin-top: 15px" class="text-center" type="text" name="api_key" placeholder="Enter your API">
+				</div>
+				<div class="col-sm-2 col-xs-0 col-md-3"></div>
+			</div>
+			
+			<div class="row" style="margin-top: 5px">
+				<div class="col-sm-2 col-xs-0 col-md-3"></div>
+				<div class="col-sm-8 col-xs-12 col-md-6">
+					<input type="submit" name="" value="Generate">
+				</div>
+			<div class="col-sm-2 col-xs-0 col-md-3"></div>
+			</div>
+		</form
+		{% if message %}
+			<div class="row">
+				<div class="col-sm-2 col-xs-0 col-md-3"></div>
+				<div class="col-sm-8 col-xs-12 col-md-6">
+					<p style="margin-top: 15px"><strong>Message: </strong>{{ message }}</p>
+				</div>
+			<div class="col-sm-2 col-xs-0 col-md-3"></div>
+			</div>
+		{% endif %}
+	</div>
+</body>
+</html>
