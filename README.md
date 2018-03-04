@@ -12,3 +12,5 @@
 Here, there are two main Python Scripts run.py and engine.py
 1. run.py - this is the core part. I'm using Flask(web microframework), from here the invoked requests are get maintained.
 2. engine.py - here I'm making the API calls and filttering the json response that we get from the API call and returning the required data to the run.py
+
+The link to the bot is - https://www.messenger.com/t/giffounder
